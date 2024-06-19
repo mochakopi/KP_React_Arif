@@ -12,6 +12,10 @@ git config --list
 inisialisasi git
 git init
 
+remove your credentials stored in the cache
+git config credential.helper 'cache --timeout=1'
+
+
 git add .
 git commit -m "sesi 01"
 git push origin main
