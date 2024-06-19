@@ -1,6 +1,7 @@
 # Belajar GIT
-### git config --global user.name "Arif"
-### git config --global user.email "mochakopiko@gmail.com"
+
+### git config --global user.name "Nama"
+### git config --global user.email "Email"
 
 ```
 buat folder
@@ -11,6 +12,9 @@ git config --list
 
 inisialisasi git
 git init
+
+remove your credentials stored in the cache
+git config --global --unset credential.helper
 
 git add .
 git commit -m "sesi 01"
