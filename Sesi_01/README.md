@@ -13,7 +13,7 @@ inisialisasi git
 git init
 
 remove your credentials stored in the cache
-git config credential.helper 'cache --timeout=1'
+git config --global --unset credential.helper
 
 
 git add .
