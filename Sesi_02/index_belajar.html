@@ -5,7 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arif Setiawan - My Portofolio</title>
+    <!-- internal css -->
     <style>
+      body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
       img{
         width: 250px;
         height: auto;
@@ -14,6 +21,8 @@
         animation: rotate 2s infinite;
       }
     </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <!-- body -->
   <body>
@@ -70,6 +79,33 @@
             <li>Github: <a href="https://github.com/mochakopi" target="_blank">mochakopi</a></li>
           </ul>
         </p>
+        <div>
+          <form action="" method="get">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <div class="form-control">
+                <label for="nama_pengirim">Nama Pengirim:</label>
+                <input type="text" id="nama_pengirim" name="nama_pengirim" placeholder="Input Nama Pengirim" required/>
+              </div>
+              <div class="form-control">
+                <label for="email_pengirim">Email Pengirim:</label>
+                <input type="email" id="email_pengirim" name="email_pengirim" placeholder="Input Email Pengirim" required/>
+              </div>
+              <div class="form-control">
+                <label for="no_telp_pengirim">No. Telp Pengirim:</label>
+                <input type="tel" id="no_telp_pengirim" name="no_telp_pengirim" placeholder="Input No. Telp Pengirim"required/>
+              </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Message</legend>
+              <div class="form-control">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" placeholder="Input Pesan" required></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
     <!-- footer -->
