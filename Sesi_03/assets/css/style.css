@@ -1,3 +1,10 @@
+/* 
+    penjelasan css pada navbar
+    display, justify-content, align-items: aku menggunakan Flexbox untuk mengatur tata letak konten di dalam <nav>. 
+    display: flex; membuat pada bagian <nav> menjadi container fleksibel. 
+    justify-content: center; dan align-items: center; untuk mengatur konten di tengah secara horizontal dan vertikal.
+    flex-direction: column; untuk menyusun konten dalam kolom vertikal di dalam bagian <nav>.
+*/
 nav {
   background-color: #333;
   color: white;
@@ -8,11 +15,25 @@ nav {
   flex-direction: column;
 }
 
+/* 
+    nav.scrolled: memberikan target pada elemen <nav> yang memiliki kelas scrolled.
+    background-color: membuat latar belakang (#333).
+    box-shadow: membuat efek bayangan (shadow) pada <nav> ketika memiliki kelas scrolled. 
+                bayangan ini memiliki 0 piksel di sumbu X, 2 piksel di sumbu Y, 4 piksel blur radius, 
+                dan warna yang transparan (rgba(0, 0, 0, 0.1)). 
+*/
 nav.scrolled {
   background-color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* 
+    pada kode css nav .nav-container mengubah elemen, dengan kelas .nav-container 
+    kemudian di dalam elemen <nav> menjadi flex container dengan tata letak yang terpusat secara horizontal dan vertikal. 
+    memastikan elemen .nav-container memanfaatkan lebar penuh dari elemen <nav>, 
+    sementara max-width: 1200px; memberikan batasan maksimum untuk lebar .nav-container.
+    membuat desain navigasi yang responsif.
+ */
 nav .nav-container {
   display: flex;
   justify-content: center;
