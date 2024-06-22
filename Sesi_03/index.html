@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arif Setiawan - My Portofolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      main {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo"><span style="color: #cb1818">KAMI</span> BELAJAR</div>
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div class="card">
+          <div class="card-content">
+            <img
+              src="assets/img/balam.jpeg"
+              alt="Bandar Lampung"
+              style="border-radius: 10px"
+            />
+            <h2>Hi! Everyone, Welcome to My Portofolio.</h2>
+            <p>Berpikirlah positif, tidak peduli seberapa keras kehidupanmu.</p>
+          </div>
+          <div class="corner-text">- Ali bin Abi Thalib</div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <img src="assets/img/me.jpeg" alt="Arif Setiawan" />
+          <h2>About Me</h2>
+          <p>
+            Perkenalkan saya Arif Setiawan. Saya berdomisili di Bandar Lampung.
+            <br />
+            Mengikuti kelas
+            <b
+              >Berkarir Sebagai Web Programmer dengan React Batch 2
+              (Prakerja)</b
+            >
+            untuk memperdalam ilmu saya dalam dunia pemrograman.<br />
+            Saya berharap dengan mengikuti kelas ini, saya bisa belajar bersama
+            dan saling berbagi ilmu. <br />
+          </p>
+        </div>
+      </section>
+
+      <section id="project" class="project">
+        <div>
+          <img src="assets/img/project.jpg" alt="Project" />
+          <h2>Project</h2>
+          <p>
+            Berikut adalah beberapa project yang pernah saya kerjakan:
+            <ol>
+              <li>Project 1</li>
+              <li>Project 2</li>
+              <li>Project 3</li>
+            </ol>
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <h2>Contact</h2>
+          
+          <div>
+            <form action="" method="get">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-control">
+                  <label for="nama">Nama:</label>
+                  <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Input Nama"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Input Email"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="no_telp">No. Telp:</label>
+                  <input
+                    type="tel"
+                    id="no_telp"
+                    name="no_telp"
+                    placeholder="Input No. Telp"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Message</legend>
+                <div class="form-control">
+                  <label for="pesan">Pesan:</label>
+                  <textarea
+                    id="pesan"
+                    name="pesan"
+                    placeholder="Input Pesan"
+                    required
+                  ></textarea>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn">Kirim Data</button>
+            </form> 
+          </div>
+
+          <div style="overflow-x: auto;">
+            <table class="responsive-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Email</th>
+                  <th>No. Telp</th>
+                  <th>Pesan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="No">1</td>
+                  <td data-label="Nama">Arif Setiawan</td>
+                  <td data-label="Email">arifswn1@gmail.com</td>
+                  <td data-label="No. Telp">082269837758</td>
+                  <td data-label="Pesan">Halo Admin <b>Kami Belajar</b>, saya tertarik dengan portofolio Anda.</td>
+                </tr>
+                <tr>
+                  <td data-label="No">2</td>
+                  <td data-label="Nama">Diah Ayu</td>
+                  <td data-label="Email">example@gmail.com</td>
+                  <td data-label="No. Telp">0822xxxxxxx</td>
+                  <td data-label="Pesan">Hi Kak <b>Kami Belajar</b>, saya ingin bertanya tentang kelas yang diadakan.</td>
+                </tr>
+                <tr>
+                  <td data-label="No">3</td>
+                  <td data-label="Nama">Imas Fitri</td>
+                  <td data-label="Email">example@gmail.com</td>
+                  <td data-label="No. Telp">0822xxxxxxx</td>
+                  <td data-label="Pesan">Hi Gan <b>Kami Belajar</b>, bisa bantu saya untuk memperbaiki website saya?</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Total Pesan</td>
+                  <td id="total_pesan">3</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>          
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024
+        <b>Berkarir Sebagai Web Programmer dengan React Batch 2 (Prakerja).</b>
+        <br />
+        All Rights Reserved.
+      </p>
+
+      <p>
+        <a href="#contact">Contact Us</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>
