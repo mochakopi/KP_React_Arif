@@ -140,80 +140,149 @@ img {
 }
 
 fieldset {
-  width: 35%;
-  border: 1px solid #ccc;
+  margin: 20px 0;
   padding: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #ccc;
   border-radius: 8px;
+  transition: border-color 0.3s ease;
 }
 
-legend {
-  font-size: 1.2em;
-  font-weight: bold;
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.form-control {
-  margin-bottom: 15px;
-}
-
-label {
+.form-control label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+/* 
+    .form-control input dan .form-control textarea: 
+    membuat elemen input dan textarea menjadi 100% lebar, 
+    padding 8 piksel, 
+    border 1 piksel solid dengan warna #ccc, 
+    border-radius 4 piksel, 
+    box-sizing border-box, 
+    dan transisi border-color dan box-shadow selama 0.3 detik.
+ */
+.form-control input,
+.form-control textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus {
+/* 
+    .form-control input:hover dan .form-control textarea:hover: 
+    mengubah warna border menjadi #007bff ketika elemen input dan textarea dihover.
+ */
+.form-control input:hover,
+.form-control textarea:hover {
   border-color: #007bff;
+}
+
+/* 
+    .form-control input:focus dan .form-control textarea:focus: 
+    menghilangkan outline, 
+    mengubah warna border menjadi
+*/
+.form-control input:focus,
+.form-control textarea:focus {
   outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-textarea {
-  height: 100px;
-  resize: vertical;
-}
-
+/* 
+    .form-control textarea: 
+    membuat textarea menjadi 100% lebar, 
+    padding 8 piksel, 
+    border 1 piksel solid dengan warna #ccc, 
+    border-radius 4 piksel, 
+    box-sizing border-box, 
+    dan transisi border-color dan box-shadow selama 0.3 detik.
+*/
 .btn {
-  padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-.btn-block {
-  width: 100%;
+.btn:active {
+  background-color: #003f7f;
 }
 
-table {
+/* 
+    .responsive-table: 
+    membuat tabel menjadi 100% lebar, 
+    border-collapse collapse, 
+    border-spacing 0, 
+    margin-bottom 15 piksel, 
+    background-color #fff, 
+    box-shadow 0 0 10px rgba(0, 0, 0, 0.1), 
+    overflow hidden, 
+    dan table-layout fixed.
+*/
+.responsive-table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  table-layout: fixed;
 }
 
-table th,
-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
+/* 
+    .responsive-table thead th: 
+    membuat teks rata tengah, 
+    padding 12 piksel, 
+    border-bottom 1 piksel solid dengan warna #ddd, 
+    dan background-color #f2f2f2.
+
+*/
+.responsive-table th,
+.responsive-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
-table th {
-  background-color: #f4f4f4;
+.responsive-table th {
+  background-color: #f2f2f2;
+}
+
+.responsive-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.responsive-table tfoot {
+  background-color: #e4f0f7;
+}
+
+.responsive-table tfoot td {
+  text-align: right;
+}
+.responsive-table tfoot #total_pesan {
+  text-align: center;
 }
