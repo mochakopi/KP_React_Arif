@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arif Setiawan - My Portofolio</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <span style="color: #cb1818">KAMI</span> BELAJAR
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="container py-4">
-      <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-12">
-          <div class="card shadow-sm text-center">
-            <div class="card-body">
-              <img
-                src="assets/img/balam.jpeg"
-                alt="Bandar Lampung"
-                class="img-fluid rounded mb-3"
-                style="max-width: 100%; height: auto"
-              />
-              <h2>Hi! Everyone, Welcome to My Portfolio.</h2>
-              <p>
-                Berpikirlah positif, tidak peduli seberapa keras kehidupanmu.
-              </p>
-              <div
-                class="text-muted"
-                style="position: absolute; bottom: 10px; right: 10px"
-              >
-                - Ali bin Abi Thalib
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arif Setiawan - My Portofolio</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Internal css -->
+  <style>
+    .card-body {
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span style="color: #cb1818">KAMI</span> BELAJAR
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-12">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <img src="assets/img/balam.jpeg" alt="Bandar Lampung" class="img-fluid rounded mb-3"
+              style="max-width: 100%; height: auto" />
+            <h2>Hi! Everyone, Welcome to My Portfolio.</h2>
+            <p>
+              Berpikirlah positif, tidak peduli seberapa keras kehidupanmu.
+            </p>
+            <div class="text-muted" style="position: absolute; bottom: 10px; right: 10px">
+              - Ali bin Abi Thalib
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="container my-4">
-      <h2 class="text-center mb-4">About</h2>
-      -
-    </section>
-
-    <!-- Project Section with Slides -->
-    <section id="project" class="container my-4">
-      <h2 class="text-center mb-4">Project</h2>
-      -
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container my-4">
-      <h2 class="text-center mb-4">Contact</h2>
-      -
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <div class="container">
-        <p class="mb-0">
-          &copy; 2024 <span style="color: #cb1818">KAMI</span> BELAJAR. All
-          Rights Reserved.
+  <!-- About Section -->
+  <section id="about" class="container my-4 text-center">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4 mb-3">
+        <img src="assets/img/me.jpeg" alt="Arif Setiawan" class="img-fluid rounded w-75 w-md-50 w-lg-75" />
+      </div>
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>
+          Perkenalkan saya Arif Setiawan. Saya berdomisili di Bandar Lampung.
+          <br />
+          Mengikuti kelas
+          <b>Berkarir Sebagai Web Programmer dengan React Batch 2
+            (Prakerja)</b>
+          untuk memperdalam ilmu saya dalam dunia pemrograman.
+          <br />
+          Saya berharap dengan mengikuti kelas ini, saya bisa belajar bersama
+          dan saling berbagi ilmu.
         </p>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+  <!-- Project Section with Slides -->
+  <section id="project" class="container my-4">
+    <h2 class="text-center mb-4">Project</h2>
+    -
+  </section>
 
-  </body>
+  <!-- Contact Section -->
+  <section id="contact" class="container my-4">
+    <h2 class="text-center mb-4">Contact</h2>
+
+    <div class="contact-form">
+      <form action="" method="get">
+        <fieldset class="border p-3 mb-3">
+          <legend class="w-auto px-2">Personal Information</legend>
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" class="form-control" placeholder="Input Nama" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Input Email" required />
+          </div>
+          <div class="form-group">
+            <label for="no_telp">No. Telp:</label>
+            <input type="tel" id="no_telp" name="no_telp" class="form-control" placeholder="Input No. Telp" required />
+          </div>
+        </fieldset>
+        <fieldset class="border p-3 mb-3">
+          <legend class="w-auto px-2">Message</legend>
+          <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" class="form-control" placeholder="Input Pesan" required></textarea>
+          </div>
+        </fieldset>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <button type="submit" class="btn btn-primary btn-block custom-tooltip" data-toggle="tooltip"
+              data-placement="top" title="Click here to contact us">
+              <i class="fa fa-paper-plane"></i>
+              Kirim Data
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">
+        &copy; 2024 <span style="color: #cb1818">KAMI</span> BELAJAR. All
+        Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+</body>
+
 </html>
