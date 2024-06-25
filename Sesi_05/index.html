@@ -251,6 +251,9 @@
           </div>
         </div>
       </form>
+      <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+        Berhasil Dikirim
+      </div>
 
       <!-- Modal -->
       <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
@@ -389,6 +392,12 @@
 
       if (!isPhoneValid) {
         phone.classList.add('is-invalid');
+        event.preventDefault();
+      }
+
+      // Jika validasi berhasil
+      if (isEmailValid && isPhoneValid) {
+        successMessage.style.display = 'block';
         event.preventDefault();
       }
     });
