@@ -206,7 +206,7 @@
     <h2 class="text-center mb-4">Contact</h2>
 
     <div class="contact-form">
-      <form action="" method="get">
+      <form id="contactForm" action="" method="get">
         <fieldset class="border p-3 mb-3">
           <legend class="w-auto px-2">Personal Information</legend>
           <div class="form-group">
@@ -216,10 +216,16 @@
           <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" class="form-control" placeholder="Input Email" required />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
           </div>
           <div class="form-group">
             <label for="no_telp">No. Telp:</label>
             <input type="tel" id="no_telp" name="no_telp" class="form-control" placeholder="Input No. Telp" required />
+            <div class="invalid-feedback">
+              Please enter a valid phone number with at least 12 digits.
+            </div>
           </div>
         </fieldset>
         <fieldset class="border p-3 mb-3">
@@ -237,7 +243,6 @@
               Kirim Data
             </button>
           </div>
-
           <div class="col-md-6 mb-3">
             <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#dataModal">
               <i class="fa fa-table"></i>
@@ -338,6 +343,7 @@
   <script src="assets/js/font-awesome.min.js"></script>
 
   <script>
+
     // Mengubah warna background card
     document.querySelector('.card').style.backgroundColor = '#f0f8ff';
 
@@ -357,6 +363,34 @@
       var celsius = (fahrenheit - 32) * 5 / 9;
       document.getElementById('celsius').innerText = celsius.toFixed(2) + ' °C';
       document.getElementById('result').style.display = 'block';
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      // Ambil nilai dari field email dan no_telp
+      const email = document.getElementById('email');
+      const phone = document.getElementById('no_telp');
+
+      // Regex untuk validasi email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const isEmailValid = emailPattern.test(email.value);
+
+      // Validasi no_telp untuk minimal 12 digit
+      const isPhoneValid = phone.value.length >= 12;
+
+      // Reset validasi
+      email.classList.remove('is-invalid');
+      phone.classList.remove('is-invalid');
+
+      // Cek validasi
+      if (!isEmailValid) {
+        email.classList.add('is-invalid');
+        event.preventDefault();
+      }
+
+      if (!isPhoneValid) {
+        phone.classList.add('is-invalid');
+        event.preventDefault();
+      }
     });
 
     $(document).ready(function () {
