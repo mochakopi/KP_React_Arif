@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import TemperatureConverter from "./components/TemperatureConverter";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -14,9 +15,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route
+              path="/application/temperature-converter"
+              element={<TemperatureConverter />}
+            />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+
         <Footer />
       </div>
     </Router>
@@ -24,4 +30,5 @@ function App() {
 }
 
 export default App;
+
 
