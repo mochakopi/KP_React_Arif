@@ -5,10 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <span className="span-title" style={{ color: "#cb1818" }}>
-            KAMI
-          </span>{" "}
-          <span>BELAJAR</span>
+          <span className="span-title" style={{ color: "#cb1818" }}>KAMI</span> <span>BELAJAR</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -53,6 +50,11 @@ const Navbar = () => {
                     Temperature Converter
                   </Link>
                 </li>
+                <li>
+                  <Link className="dropdown-item" to="/application/todolist">
+                    Todo List
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="nav-item">
@@ -68,5 +70,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
 

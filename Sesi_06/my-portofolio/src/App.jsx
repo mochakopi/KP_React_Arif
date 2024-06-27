@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import TemperatureConverter from "./components/TemperatureConverter";
+import TodoList from "./components/TodoList";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -19,6 +20,7 @@ function App() {
               path="/application/temperature-converter"
               element={<TemperatureConverter />}
             />
+            <Route path="/application/todolist" element={<TodoList />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
@@ -30,5 +32,6 @@ function App() {
 }
 
 export default App;
+
 
 
