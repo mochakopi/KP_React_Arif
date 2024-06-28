@@ -82,6 +82,11 @@ const Navbar = () => {
                     Todo List
                   </Link>
                 </li>
+                <li>
+                  <Link className="dropdown-item" to="/application/user-list">
+                    User List
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="nav-item">

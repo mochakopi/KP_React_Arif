@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import TemperatureConverter from "./components/TemperatureConverter";
 import TodoList from "./components/TodoList";
+import UserList from "./components/UserList";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ function App() {
               element={<TemperatureConverter />}
             />
             <Route path="/application/todolist" element={<TodoList />} />
+            <Route path="/application/user-list" element={<UserList />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
