@@ -1,11 +1,38 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import Swal from "sweetalert2";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = () => {
+  useEffect(() => {
+    Swal.fire({
+      title: "Selamat Datang",
+      text: "Welcome to the application!",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+  }, []);
+
+  const handleClose = () => {
+    Swal.fire({
+      title: "Sampai Jumpa",
+      text: "See you next time!",
+      icon: "info",
+      confirmButtonText: "OK",
+    }).then(() => {
+      window.close();
+    });
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <span className="span-title" style={{ color: "#cb1818" }}>KAMI</span> <span>BELAJAR</span>
+          <span className="span-title" style={{ color: "#cb1818" }}>
+            KAMI
+          </span>{" "}
+          <span>BELAJAR</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -62,6 +89,11 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <li className="nav-item">
+              <button className="btn btn-danger nav-link" onClick={handleClose}>
+                <i className="fas fa-times"></i> Close
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -70,7 +102,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
