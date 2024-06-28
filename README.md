@@ -146,6 +146,15 @@ UseCallback ini digunakan untuk menghindari pembuatan fungsi yang baru setiap ka
 ```
 6. Dll.
 
+## Deployment Aplikasi React Menggunakan Vercel
+1. Kunjungi situs Vercel
+2. Login menggunakan akun GitHub
+3. Klik New Project
+4. Pilih Repository yang akan di-deploy
+5. Klik Deploy
+6. Tunggu proses deployment selesai
+7. Aplikasi berhasil di-deploy
+
 ## Fitur Aplikasi
 1. Home Page
 ```
