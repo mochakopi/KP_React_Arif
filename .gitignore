@@ -1,2 +1,44 @@
-# Ignore Folder
-_Config/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vite/deps/_metadata.json
+.vite/deps/bootstrap_dist_js_bootstrap__bundle__min__js.js
+.vite/deps/bootstrap_dist_js_bootstrap__bundle__min__js.js.map
+.vite/deps/chunk-5WRI5ZAA.js
+.vite/deps/chunk-5WRI5ZAA.js.map
+.vite/deps/chunk-HCGKX5ED.js
+.vite/deps/chunk-HCGKX5ED.js.map
+.vite/deps/chunk-WNPTCGAH.js
+.vite/deps/chunk-WNPTCGAH.js.map
+.vite/deps/package.json
+.vite/deps/react-bootstrap.js
+.vite/deps/react-bootstrap.js.map
+.vite/deps/react-dom_client.js
+.vite/deps/react-dom_client.js.map
+.vite/deps/react-router-dom.js
+.vite/deps/react-router-dom.js.map
+.vite/deps/react.js
+.vite/deps/react.js.map
+.vite/deps/sweetalert2.js
+.vite/deps/sweetalert2.js.map
