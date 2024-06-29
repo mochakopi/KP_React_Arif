@@ -1,39 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import TemperatureConverter from "./components/TemperatureConverter";
-import TodoList from "./components/TodoList";
-import UserList from "./components/UserList";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+import './App.css'
 
 function App() {
-  return (
-    <Router>
-      <div className="d-flex flex-column min-vh-100">
-        <Navbar />
-        <div className="flex-grow-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route
-              path="/application/temperature-converter"
-              element={<TemperatureConverter />}
-            />
-            <Route path="/application/todolist" element={<TodoList />} />
-            <Route path="/application/user-list" element={<UserList />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
 
-        <Footer />
-      </div>
-    </Router>
-  );
+  return (
+    <>
+      <h2>Hello</h2>
+    </>
+  )
 }
 
-export default App;
-
-
-
+export default App
