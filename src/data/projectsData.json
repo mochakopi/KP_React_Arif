@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "application": "MPP (Mal Pelayanan Publik)",
+      "appLink": "https://mpp.tubaba.go.id/",
+      "description": "Alikasi untuk mempermudah masyarakat dalam mengakses informasi pelayanan publik."
+    },
+    {
+      "id": 2,
+      "application": "SiDoka (Sistem Informasi Domba dan Kambing)",
+      "appLink": "https://sidoka.site/",
+      "description": "Aplikasi untuk mempermudah peternak dalam mengelola data ternak domba dan kambing."
+    }
+  ]
+  

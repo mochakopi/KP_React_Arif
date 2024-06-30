@@ -1,0 +1,27 @@
+{
+    "name": "Arif Setiawan",
+    "role": "Backend Developer",
+    "location": "Bandar Lampung, Indonesia",
+    "bio": "Hi! I'm Arif Setiawan, a Backend Developer based in Bandar Lampung, Indonesia. I have a passion for web development and love to create for web and mobile devices. But I also have a lot of experience in the field of mobile application development.",
+    "workExperience": [
+      {
+        "title": "Smart Village Lampung",
+        "date": "March 2021 - Jul 2023",
+        "description": "Develop and maintain the Smart Village Lampung website and mobile application (SSO, E-Voting, E-Commerce, etc).",
+        "link": "https://smartvillage.co.id/"
+      },
+      {
+        "title": "Uniland Furniture",
+        "date": "July 2020 - October 2021",
+        "description": "Develop and maintain the Uniland Furniture website and mobile application.",
+        "link": "https://gomega.co.id/"
+      },
+      {
+        "title": "Institut Teknologi Sumatera",
+        "date": "November 2017 - September 2021",
+        "description": "Develop and maintain the Institut Teknologi Sumatera website and mobile application.",
+        "link": "https://itera.ac.id/"
+      }
+    ]
+  }
+  

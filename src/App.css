@@ -1,0 +1,216 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.home {
+  padding: 20px;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.floating-action-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-action-button button {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-action-button button:hover {
+  background-color: #0056b3;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+}
+.subheading {
+  font-size: 1.2rem;
+  color: #22c0e8;
+  font-weight: bold;
+}
+
+.carousel-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.home .carousel {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.home .carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.home .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.home .carousel-caption h3 {
+  font-size: 2rem;
+}
+
+.home .carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.projects {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #333;
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .floating-action-button {
+    bottom: 70px;
+    right: 20px;
+  }
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+  .footer {
+    position: fixed;
+  }
+  .home .carousel-caption h3 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .home .carousel-caption p {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .projects {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-lg-8,
+  .col-md-10 {
+    width: 100%;
+  }
+}
